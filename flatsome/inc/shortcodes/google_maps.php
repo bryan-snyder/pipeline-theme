@@ -1,8 +1,9 @@
 <?php
 // [map]
 function shortcode_map($atts, $content=null, $code) {
+  global $flatsome_opt;
 
-    $mapsrandomid = rand();
+  $mapsrandomid = rand();
 	extract(shortcode_atts(array(
 		'lat'  => '',
     'long' => '',
@@ -11,11 +12,15 @@ function shortcode_map($atts, $content=null, $code) {
     'zoom' => '17',
     'controls' => 'false',
     'pan' => 'false',
+    'api' => $flatsome_opt['google_map_api']
 	), $atts));
+
+  if($api) $api = '&key='.$api;
+  
 	ob_start();
 	?> 
     
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false<?php echo $api;?>"></script>
 	<script type="text/javascript">
     
     function initialize() {

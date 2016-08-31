@@ -250,9 +250,9 @@ setTimeout(function() {
 
 
 /* Back to top links */
-$('.absolute-footer').waypoint(function() {
+$('#wrapper').waypoint(function() {
   $('#top-link').toggleClass('start-anim');
-},{offset:'100%'});
+},{offset:'-100%'});
 
 
 /* Add Sticky Header */
@@ -370,15 +370,6 @@ $( window ).resize(function() {
 // Mega menu
 $('#megaMenu').wrap('<li/>');
 
-
-/****** FASTCLICK *******/
-// Disable fast click for touch devices on some elements
-if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-  $('.select2-container, #megaMenu, .top-bar-nav .nav-top-link, .header-nav .nav-top-link, .menu-item-language-current, .search-dropdown, input.booking_calender').addClass('needsclick');
-}
-
-// Run fastclick script
-FastClick.attach(document.body);
 
 $(window).resize();
 

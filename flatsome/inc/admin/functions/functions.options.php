@@ -631,14 +631,13 @@ $of_options[] = array( 	"name" 		=> "Flatsome Builder Beta",
 						"type" 		=> "checkbox"
 );
 
-
-$of_options[] = array( 	"name" 		=> "Flatsome Docs in Admin Bar.",
-						"id" 		=> "flatsome_docs",
-						"desc"      => "Enable Quick links to Flatsome Documentations in Admin Bar. (For Admins only)",
-						"std" 		=> 1,
-						"type" 		=> "checkbox"
+$of_options[] = array( 	
+	"name" 		=> "Google Maps API",
+	"desc" 		=> "Enter a Google Maps API key here. You can generate one here: <a href='https://developers.google.com/maps/documentation/javascript/'>Google Maps API</a>",
+	"id" 		=> "google_map_api",
+	"std"       => "",
+	"type" 		=> "text"
 );
-
 
 $of_options[] = array( 	"name" 		=> "Maintenance Mode",
 						"id" 		=> "maintenance_mode",

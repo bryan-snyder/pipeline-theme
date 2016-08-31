@@ -1,3 +1,14 @@
+--- 2.9.6 ---
+NEW: German translation added.
+NEW: Swedish translations added.
+NEW: Possible to add Google Maps API. (Theme Options > Global settings).
+
+FIXED: Outdated WooCommerce Files for WooCommerce 2.6.3.
+FIXED: Account Menu Endpoint urls link to cart page.
+FIXED: Unable to select Country/Stat dropdown on mobile.
+FIXED: Scroll to top animates in earlier.
+FIXED: Possible to change QTY after cart refresh.
+
 --- 2.9.5.1 ---
 FIXED: Outdated WooCommerce 2.6.1 files.
 

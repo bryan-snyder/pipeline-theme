@@ -1,11 +1,13 @@
 ;(function ($) {
 "use strict";
 
-   // Create QTY Buttons to product pages
+  // Create QTY Buttons to product pages
   $('.product-info, table.cart').addQty();
 
-  $('.page-checkout').arrive(".shop_table", function() {
-      $('.shop_table').addQty();
+  jQuery('body').on('updated_cart_totals', function(){
+    setTimeout(function(){
+      jQuery('.shop_table').addQty();
+    }, 100);
   });
 
   var orginal_image = $('.product-thumbnails .first img').attr('src');

@@ -67,7 +67,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 					                        <?php if(function_exists('wc_get_account_menu_items') && $flatsome_opt['wc_account_links']){ ?>
 											    <?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 													<li>
-														<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
+														<a href="<?php echo esc_url( wc_get_endpoint_url( $endpoint, ' ', wc_get_page_permalink( 'myaccount' )) ); ?>"><?php echo esc_html( $label ); ?></a>
 													</li>
 												<?php endforeach; ?>
 											<?php } ?>
@@ -301,7 +301,7 @@ if($flatsome_opt['html_intro'] && is_front_page()) echo '<div class="home-intro"
 			                        <?php if(function_exists('wc_get_account_menu_items') && $flatsome_opt['wc_account_links']){ ?>
 									    <?php foreach ( wc_get_account_menu_items() as $endpoint => $label ) : ?>
 											<li class="<?php echo wc_get_account_menu_item_classes( $endpoint ); ?>">
-												<a href="<?php echo esc_url( wc_get_account_endpoint_url( $endpoint ) ); ?>"><?php echo esc_html( $label ); ?></a>
+												<a href="<?php echo esc_url( wc_get_endpoint_url( $endpoint, ' ', wc_get_page_permalink( 'myaccount' )) ); ?>"><?php echo esc_html( $label ); ?></a>
 											</li>
 										<?php endforeach; ?>
 									<?php } ?>

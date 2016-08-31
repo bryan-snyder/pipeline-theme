@@ -150,6 +150,7 @@ $flatsome_defaults = array (
   'facebook_login_text' => '',
   'facebook_login_checkout' => 0,
   'disable_reviews' => 0,
+  'google_map_api' => 'AIzaSyCnQHEUD4Yvg4m1ul3PWUwsjctR1Cl2NFc',
   'social_icons' => 
   array (
     0 => 'facebook',

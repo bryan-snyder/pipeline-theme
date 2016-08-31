@@ -103,6 +103,10 @@ body {
 a {
   background: transparent; }
 
+a.button, button {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation; }
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
@@ -1146,6 +1150,9 @@ ul.tabs {
   font-size: 32px;
   opacity: .9;
   z-index: 99; }
+  #top-link .icon-angle-up {
+    top: 1px;
+    position: relative; }
 
 #top-link.active {
   display: block; }
